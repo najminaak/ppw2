@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\BukuController;
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -30,3 +32,5 @@ Route::get('/about2', function () {
 Route::get('/posts', [PostController::class, 'index']);
 
 Route::get('/article', [ArticleController::class, 'index']);
+
+Route::get('/buku', [BukuController::class, 'index']);
